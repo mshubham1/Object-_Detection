@@ -1,0 +1,17 @@
+{% extends 'cv_vid/base.html' %}
+	{% block content %}
+
+	<form method="post" enctype="multipart/form-data">
+	    {% csrf_token %}
+	    <input type="file" name="myfile">
+	    <button type="submit">Upload</button>
+	  </form>
+
+
+
+	  {% if original_img %}
+	  <h3>{{prediction}}</h3>
+	  <img src="{{ original_img }}" alt="OBB" width="500" height="333">
+
+	  {% endif %}
+{% endblock %}
