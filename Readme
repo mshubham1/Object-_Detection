@@ -1,28 +1,27 @@
-# Income Price Prediction REadme
+# Object-Detection-API
 
-To build a classification methodology to determineto whether a person’s income is above 50k or below 50k using various features like age, education, and occupation. 
-## Table Content ✏️
-* Overview
-* Dataset
-* Installation
-* Deployment
-* Documentation
-* Technology Used
-* Motivation
-* Conclusion
-* Contribution
+A Django based app that performs Object detection, object segmentation and image classification.
+
+It's implemented using django framework and PyTorch.
 
 
+### Dependencies
 
-## Overview  📜
-We will predict whether the person's income is above 50K or  below 50k using various features like age, education, and occupation. 
-The application is a web app which is developed in Flask Framework.
+<ul>
+    <li> 
+        <a href="https://www.djangoproject.com/" >Django</a>
+    </li>
+    <li> 
+        <a href="https://pytorch.org/" >PyTorch</a>
+    </li>
+    <li>
+        <a href="https://pillow.readthedocs.ioenstable" >Pillow</a>
+    </li>
+    <li>
+        <a href="https://opencv.org/" >OpenCV</a>
+    </li>
+</ul>
 
->Read more about it at [Blogpost.](https://medium.com/@shubhammourya2014/census-income-prediction-f08ee9e4720d)
-
-## Dataset  
-The dataset we are going to use is the Adult census income dataset from Kaggle which contains about 32561 rows and 15 features that can be downloaded here
->Dataset link: https://www.kaggle.com/uciml/adult-census-income
 
 ## Installations  🗄️
 The Code is written in Python 3.8 If you don't have Python installed you can find it here. If you are using a lower version of Python you can upgrade using the pip package, ensuring you have the latest version of pip. To install the required packages and libraries, run this command in the project directory after cloning the repository:
@@ -34,42 +33,14 @@ First you need to create a virtual conda enviornment.
   conda create -n myenv python=3.6
   pip install -r requirements.txt
 ```
-## Deployment
-> AWS Deployment Link: http://ec2-18-219-219-167.us-east-2.compute.amazonaws.com:8080/
-
-![Income Predictor](https://user-images.githubusercontent.com/47842305/142749840-4bc29388-35b4-4e97-acbf-b0e71a02b94a.gif)
-
-## Directory
 
 
-```javascript
-├── data
-│   ├──incomedata.csv
-├── log_file
-│   ├── log_data.log
-│   ├── logger.py
-├── static
-│   ├── image
-│   ├── ├── img.jpg
-├── templates
-│   ├── database.html
-│   ├── index.html
-├── Money_Laundering_EDA.ipynb
-├── XGB_Classifier.pkl
-├── Procfile
-├── EDA.ipynb
-├── app.py
-├── model_rf.pkl
-├── requirements.txt
-├── runtime.txt
-├── README.md
-
+To run the server
 ```
-## Technologies Used
-
-* Python
-* FrontEnd: HTML & CSS
-* Backend: Flask 
+    $ pip3 install -r requirements.txt
+    $ python3 manage.py collectstatic
+    $ python3 manage.py runserver
+```
 
 ## Motivation
 
